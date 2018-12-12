@@ -57,7 +57,8 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/Sacramento_Skyline_at_Night.jpg') no-repeat top center ;
+  background:linear-gradient(to top, rgba(77, 2, 2,1) 0, rgba(77,2,2,0) 10%), 
+             url('images/Sacramento_Skyline_at_Night.jpg') no-repeat top center;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -74,24 +75,28 @@ header .profile-image {
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  /* transform: scale(1.2) rotate(5deg); */
+  transform: scale(1.2) rotatez(360deg);
 }
 .tag {
-  background-color: #efefef;
-  color: black;
-  padding: 10px;
+  background-color: rgba(43, 37 , 65, 0.4);
+  color: rgb(243, 184, 35);
+  text-shadow: 0 1px 3px rgba(243, 184, 35, .5);
+  padding: 5px;
   border-radius: 5px;
   display: table;
   margin: 10px auto;
 } 
 .location {
-  background-color: rgba(77, 2, 2, .0);
+  background-color: rgba(43, 37, 65, .4);
+  padding: 5px;
+  margin-top: 25px;
   font-size: 1.4em;
   color: rgb(243, 184, 35);
-  text-shadow: 1px 1px 5px whitesmoke))
+  text-shadow: 1px 1px 5px rgba(218, 165, 32, 0.788);
 }
 .card {
-  margin: 30px;
+  margin: 20px;
   padding: 20px 40px 40px;
   max-width: 500px;
   text-align: left;
@@ -113,6 +118,7 @@ ul.skills {
   border-radius: 6px;
   display: inline-block;
   background: goldenrod;
+  box-shadow: 0 1px 3px rgba(218, 165, 32, 0.8);
   color: smokewhite;
   padding: 5px 10px;
   margin: 2px;
@@ -120,7 +126,12 @@ ul.skills {
 
 .skills li:nth-child(odd) {
   background: rgba(77, 2, 2, 0.685);
+  box-shadow:0 1px 3px rgba(72, 2, 2, .8);
   color: white;
+}
+
+.skills li:hover {
+  transform: scale(1.1);
 }
 
 footer {
