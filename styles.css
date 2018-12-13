@@ -43,7 +43,7 @@ a:hover {
 .nav .name {
     display: block;
     margin-right: auto;
-    color: white;
+    color: #f3b823;
 }
 .nav li {
   padding: 5px 10px 10px 10px;
@@ -52,7 +52,7 @@ a:hover {
   transition: all .5s;
 }
 .nav a:hover {
-  color: white
+  color: #f3b823;
 }
 
 header {
@@ -80,7 +80,7 @@ header .profile-image:hover {
 }
 .tag {
   background-color: rgba(43, 37 , 65, 0.4);
-  color: rgb(243, 184, 35);
+  color: #f3b823;
   text-shadow: 0 1px 3px rgba(243, 184, 35, .5);
   padding: 5px;
   border-radius: 5px;
@@ -109,21 +109,6 @@ header .profile-image:hover {
   border-color: goldenrod;
 }
 
-.hobbies {
-  margin: 20px;
-  padding: 20px 40px 40px;
-  max-width: 500px;
-  text-align: left;
-  background: url('images/MountainAshFloor.jpg');
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
-  border-bottom: 4px solid #ccc;
-  border-radius: 6px;
-  transition: all .5s;
-  color: white;
-}
-.hobbies:hover {
-  border-color: goldenrod;
-}
 
 .experience {
   margin: 20px;
@@ -141,6 +126,23 @@ header .profile-image:hover {
 .experience:hover {
   border-color: goldenrod;
 }
+.hobbies {
+  margin: 20px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: url('images/MountainAshFloor.jpg');
+  background-size: cover;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+  color: white;
+}
+.hobbies:hover {
+  border-color: goldenrod;
+}
+
 ul.skills {
   padding: 0;
   text-align: center;
